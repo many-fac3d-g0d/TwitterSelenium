@@ -39,7 +39,7 @@ time.sleep(10)
 #bookmarks.click()
 
 for request in browser.requests:
-    if('recommendations.json' in request.url):
+    if('json' in request.url):
         print(request.url,
             request.response.status_code,)
         print(request.headers)
